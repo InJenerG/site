@@ -153,6 +153,42 @@ header.header {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  background-color: #f9AA33;
+}
+
+header.header .logo__wrap {
+  width: 16.66667%;
+}
+
+header.header .logo__wrap .logo {
+  width: 100%;
+  height: 100%;
+}
+
+header.header .nav__wrap {
+  width: 33.33333%;
+}
+
+header.header .nav__wrap .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1%;
+}
+
+header.header .nav__wrap .nav .nav__item .nav__link:link, header.header .nav__wrap .nav .nav__item .nav__link:visited, header.header .nav__wrap .nav .nav__item .nav__link:active, header.header .nav__wrap .nav .nav__item .nav__link:hover {
+  text-decoration: none;
+  color: #000;
+  font-size: 2rem;
 }
 
 body {

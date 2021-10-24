@@ -5,4 +5,30 @@ header.header{
     width: $size;
     @include df(row);
     @include cnt(space-around , flex-start);
+    background-color: $color-secondary;
+    .logo__wrap{
+        width: $size / 6;
+        .logo{
+            width: $size;
+            height: $size;
+        }
+    }
+    .nav__wrap{
+        width: $size / 3;
+        .nav{
+            @include df(row);
+            @include cnt(space-around , center);
+            margin: $size / 100;
+            .nav__item{
+                .nav__link{
+                    &:link,
+                    &:visited,
+                    &:active,
+                    &:hover{
+                        @include link($text-color-secondary , 2rem);
+                    }
+                }
+            }
+        }
+    }
 }

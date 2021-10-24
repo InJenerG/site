@@ -7,3 +7,9 @@
     justify-content: $js;
     align-items: $ai;
 }
+
+@mixin link($color , $font) {
+    text-decoration: none;
+    color: $color;
+    font-size: $font;
+}
