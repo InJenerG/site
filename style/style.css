@@ -139,6 +139,21 @@ table {
           box-sizing: border-box;
 }
 
+body {
+  font-family: "Alegreya";
+}
+
+body .wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 header.header {
   width: 100%;
   display: -webkit-box;
@@ -191,18 +206,30 @@ header.header .nav__wrap .nav .nav__item .nav__link:link, header.header .nav__wr
   font-size: 2rem;
 }
 
-body {
-  font-family: "Alegreya";
-}
-
-body .wrapper {
-  width: 100%;
+section.banner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background-color: #1a031c;
+  padding-top: 2%;
+}
+
+section.banner .slider {
+  width: 33.33333%;
+}
+
+section.banner .heading {
+  width: 50%;
+  font-size: 3rem;
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */

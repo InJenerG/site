@@ -1,0 +1,17 @@
+@import 'mixin';
+@import 'variable';
+
+section.banner{
+    @include df(row);
+    @include cnt(space-around , flex-start);
+    background-color: $color-primary;
+    padding-top: $size / 50;
+    .slider{
+        width: $size / 3;
+    }
+    .heading{
+        width: $size / 2;
+        font-size: 3rem;
+        color: $text-color-primary;
+    }
+}
