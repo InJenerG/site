@@ -1,0 +1,8 @@
+@import 'mixin';
+@import 'variable';
+
+header.header{
+    width: $size;
+    @include df(row);
+    @include cnt(space-around , flex-start);
+}

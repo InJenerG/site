@@ -1,0 +1,9 @@
+@mixin df($df) {
+    display: flex;
+    flex-direction: $df;
+}
+
+@mixin cnt($js , $ai) {
+    justify-content: $js;
+    align-items: $ai;
+}

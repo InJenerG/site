@@ -1,6 +1,13 @@
 @import 'reset';
+@import 'mixin';
+@import 'variable';
 @import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+@import 'header';
 
 body{
     font-family: "Alegreya";
+    .wrapper{
+        width: $size;
+        @include df(column);
+    }
 }
