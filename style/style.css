@@ -222,7 +222,7 @@ header.header .nav__wrap .nav {
 header.header .nav__wrap .nav .nav__item .nav__link:link, header.header .nav__wrap .nav .nav__item .nav__link:visited, header.header .nav__wrap .nav .nav__item .nav__link:active, header.header .nav__wrap .nav .nav__item .nav__link:hover {
   text-decoration: none;
   color: #000;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 section.banner {

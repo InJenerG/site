@@ -26,7 +26,7 @@ header.header{
                     &:visited,
                     &:active,
                     &:hover{
-                        @include link($text-color-secondary , 2rem);
+                        @include link($text-color-secondary , 1.5rem);
                     }
                 }
             }
