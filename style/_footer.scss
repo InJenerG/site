@@ -1,0 +1,31 @@
+@import 'mixin';
+@import 'variable';
+
+footer.footer{
+    width: $size;
+    background-color: $color-secondary;
+    .footer__wrap{
+        width: $size / 1.4;
+        margin: 0 auto;
+        padding: $size / 100;
+        @include df(row);
+        @include cnt(space-around , flex-start);
+        .footer__item{
+            width: $size / 3.3;
+            @include df(column);
+            .footer__heading{
+                font-weight: bold;
+                font-size: 0.9rem;
+            }
+            .footer__text{
+                font-size: 0.7rem;
+            }
+            .footer__link{
+                width: $size / 2;
+            }
+        }
+        .footer__item--last{
+            @include df(row);
+        }
+    }
+}

@@ -14,7 +14,7 @@ header.header{
         }
     }
     .nav__wrap{
-        width: $size / 3;
+        width: $size / 2.5;
         .nav{
             @include df(row);
             @include cnt(space-around , center);
