@@ -6,6 +6,7 @@ header.header{
     @include df(row);
     @include cnt(space-around , flex-start);
     background-color: $color-secondary;
+    flex: 0 0 auto;
     .logo__wrap{
         width: $size / 6;
         .logo{

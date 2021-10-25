@@ -1,13 +1,14 @@
 @import 'mixin';
 @import 'variable';
+
 .wrapper.wrapper--register{
     background-color: $color-primary;
     main.main--register{
         @include df(row);
         @include cnt(center , center);
+        padding: $size / 50;
         .main__form{
             width: $size / 1.2;
-            margin: $size / 10 auto;
             .form__wrap{
                 background-color: $text-color-primary;
                 width: $size / 3;
@@ -30,6 +31,9 @@
                         box-shadow: 0 3px 4px 0 $button-active-blue;
                     }
                 }
+            }
+            .form__wrap--login {
+                padding: $size / 20 $size / 50;
             }
         }
     }

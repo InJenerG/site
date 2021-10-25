@@ -4,6 +4,7 @@
 section.banner{
     @include df(row);
     @include cnt(space-around , flex-start);
+    flex: 1 0 auto;
     background-color: $color-primary;
     padding-top: $size / 50;
     .slider{

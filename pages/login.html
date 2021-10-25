@@ -4,9 +4,98 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
     <title>Login</title>
 </head>
 <body>
-    
+    <div class="wrapper wrapper--register">
+        <header class="header">
+            <div class="logo__wrap">
+                <a href="#" class="logo__link">
+                    <img src="../img/logo/Generetic Motors-logos_black.png" alt="logo" class="logo">
+                </a>
+            </div>
+            <div class="nav__wrap">
+                <ul class="nav">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">
+                            Главная страница
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="about_us.html" class="nav__link">
+                            О нас 
+                        </a>
+                        <a href="login.html" class="nav__link">
+                            / Вход
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <main class="main main--register">
+            <form action="https://fom.in.ua/echo" method="post" class="main__form">
+                <div class="form__wrap form__wrap--login shadow">
+                    <label for="email_enter">
+                        Электронная почта
+                    </label>
+                    <input type="email" name="email_enter" id="email_enter" placeholder="example@mail.com" class="form__block" required>
+                    <label class="pass__label" for="pass_enter">
+                        Пароль
+                    </label>
+                    <input type="password" name="pass_enter" id="pass_enter" class="form__block" pattern="(?!000)([0-6]\d{2}|7([0-6]\d|7[012]))([ -])?(?!00)\d\d\3(?!0000)\d{4}" required>
+                    <button id="submit" class="form__submit form__block" type="submit">
+                        Отправка
+                    </button>
+                </div>
+            </form>
+        </main>
+        <footer class="footer">
+            <div class="footer__wrap">
+                <div class="footer__item">
+                    <p class="footer__text">
+                        Phone: +380 98 002 5998
+                        <br>
+                        GSM: +380 98 002 5887
+                        <br>
+                        Email: generetic_motors@gmail.com
+                        <br>
+                    </p>
+                    <h3 class="footer__heading">
+                        &copy;GENERETICMOTORS.INC
+                    </h3>
+                </div>
+                <div class="footer__item">
+                    <p class="footer__text">
+                        Ukraine , Kiev 08300
+                    </p>
+                    <h3 class="footer__heading">
+                        Все права защищенны
+                    </h3>
+                </div>
+                <div class="footer__item">
+                    <h3 class="footer__heading">
+                        Для комерческих предложенний
+                    </h3>
+                    <p class="footer__text">
+                        Phone: +380 98 002 5998
+                        <br>
+                        GSM: +380 98 002 5887
+                        <br>
+                        Email: generetic_motors@gmail.com
+                        <br>
+                    </p>
+                </div>
+                <div class="footer__item footer__item--last">
+                    <a href="https://www.facebook.com/" class="footer__link">
+                        <img src="../img/messenger/facebook.png" alt="facebook" class="footer__img">
+                    </a>
+                    <a href="https://www.instagram.com" class="footer__link">
+                        <img src="../img/messenger/instagram.png" alt="instagram" class="footer__img">
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>

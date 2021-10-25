@@ -4,6 +4,7 @@
 footer.footer{
     width: $size;
     background-color: $color-secondary;
+    flex: 0 0 auto;
     .footer__wrap{
         width: $size / 1.4;
         margin: 0 auto;
