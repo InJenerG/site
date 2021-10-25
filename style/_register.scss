@@ -1,8 +1,7 @@
 @import 'mixin';
 @import 'variable';
 .wrapper.wrapper--register{
-    background-color: $color-secondary;
-    height: 100vh;
+    background-color: $color-primary;
     main.main--register{
         @include df(row);
         @include cnt(center , center);
@@ -17,6 +16,12 @@
                 border-radius: 5px;
                 box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .25);
                 @include df(column);
+                .form__block{
+                    &:active,
+                    &:focus{
+                        outline: none;
+                    }
+                }
                 .form__submit{
                     align-self: flex-end;
                     background-color: $google-blue;

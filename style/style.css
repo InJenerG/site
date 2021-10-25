@@ -220,8 +220,7 @@ header.header .nav__wrap .nav .nav__item .nav__link:link, header.header .nav__wr
 }
 
 .wrapper.wrapper--register {
-  background-color: #f9AA33;
-  height: 100vh;
+  background-color: #1a031c;
 }
 
 .wrapper.wrapper--register main.main--register {
@@ -260,6 +259,10 @@ header.header .nav__wrap .nav .nav__item .nav__link:link, header.header .nav__wr
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.wrapper.wrapper--register main.main--register .main__form .form__wrap .form__block:active, .wrapper.wrapper--register main.main--register .main__form .form__wrap .form__block:focus {
+  outline: none;
 }
 
 .wrapper.wrapper--register main.main--register .main__form .form__wrap .form__submit {
