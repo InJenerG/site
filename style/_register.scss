@@ -1,0 +1,31 @@
+@import 'mixin';
+@import 'variable';
+.wrapper.wrapper--register{
+    background-color: $color-secondary;
+    height: 100vh;
+    main.main--register{
+        @include df(row);
+        @include cnt(center , center);
+        .main__form{
+            width: $size / 1.2;
+            margin: $size / 10 auto;
+            .form__wrap{
+                background-color: $text-color-primary;
+                width: $size / 3;
+                margin: 0 auto;
+                padding: $size / 50;
+                border-radius: 5px;
+                box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .25);
+                @include df(column);
+                .form__submit{
+                    align-self: flex-end;
+                    background-color: $google-blue;
+                    margin: $size / 50;
+                    &:hover{
+                        box-shadow: 0 3px 4px 0 $button-active-blue;
+                    }
+                }
+            }
+        }
+    }
+}

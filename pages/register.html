@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../style/style.css">
+    <title>Register</title>
+</head>
+<body>
+    <div class="wrapper wrapper--register">
+        <main class="main--register">
+            <form action="https://fom.in.ua/echo" method="post" class="main__form">
+                <div class="form__wrap shadow">
+                    <label for="email_register">
+                        Электронная почта
+                    </label>
+                    <input type="email" name="email_register" id="email_register" placeholder="example@mail.com" class="form__block" required>
+                    <label for="username_register" >
+                        Имя пользователя
+                    </label>
+                    <input type="text" name="username_register" id="username_register" class="form__block" required>
+                    <label for="phone_register">
+                        Телефон
+                    </label>
+                    <input type="tel" name="phone_register" id="phone_register" class="form__block" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                    <label class="pass__label" for="pass1_register">
+                        Пароль
+                    </label>
+                    <input type="password" name="pass1_register" id="pass1_register" class="form__block" pattern="(?!000)([0-6]\d{2}|7([0-6]\d|7[012]))([ -])?(?!00)\d\d\3(?!0000)\d{4}" required>
+                    <label class="pass__label" for="pass2_register">
+                        Подтверждение пароля
+                    </label>
+                    <input type="password" name="pass2_register" id="pass2_register" class="form__block" pattern="(?!000)([0-6]\d{2}|7([0-6]\d|7[012]))([ -])?(?!00)\d\d\3(?!0000)\d{4}" required>
+                    <button id="submit" class="form__submit form__block" type="submit">
+                        Отправка
+                    </button>
+                </div>
+            </form>
+        </main>
+    </div>
+    <script src="../js/register.js"></script>
+</body>
+</html>
