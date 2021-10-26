@@ -42,13 +42,12 @@
                     <label for="email_enter">
                         Электронная почта
                     </label>
-                    <input type="email" name="email_enter" id="email_enter" placeholder="example@mail.com"
-                        class="form__block" required>
-                    <label class="pass__label" for="pass_enter">
+                    <input type="email" name="email_enter" id="email_enter" placeholder="example@mail.com" class="form__block" required>
+                    <label class="pass__label" for="pass_enter" >
                         Пароль
                     </label>
                     <input type="password" name="pass_enter" id="pass_enter" class="form__block"
-                        pattern="(?!000)([0-6]\d{2}|7([0-6]\d|7[012]))([ -])?(?!00)\d\d\3(?!0000)\d{4}" required>
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
                     <button id="submit" class="form__submit form__block" type="submit">
                         Отправка
                     </button>

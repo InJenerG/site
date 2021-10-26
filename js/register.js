@@ -7,6 +7,7 @@ $("#pass2_register").on("keyup", function () {
         $(".pass__label").css("color" , "red");
         $("#submit").attr("disabled", "disabled");
     } else{
-        $(".pass__label").css("color" , "black");
+        $(".pass__label").css("color", "black");
+        $("#submit").removeAttr("disabled");
     }
 });
