@@ -1,16 +1,12 @@
-$("#pass2_register").on("keyup", function() { // Выполняем скрипт при изменении содержимого 2-го поля
-    var value_input1 = $("#pass1_register").val(); // Получаем содержимое 1-го поля
-    var value_input2 = $(this).val(); // Получаем содержимое 2-го поля
-    
-    if(value_input1 != value_input2) { // Условие, если поля не совпадают
-        
+$("#pass2_register").on("keyup", function () {
+    var value_pass1 = $("#pass1_register").val();
+    var value_pass2 = $(this).val();
+    var value_mail = $("#email_register").val();
+    var value_username = $("#usernmane_register").val();
+    if(value_pass1 != value_pass2) {
         $(".pass__label").css("color" , "red");
-        $("#submit").attr("disabled", "disabled"); // Запрещаем отправку формы
-        
-    } else { // Условие, если поля совпадают
-    
-        $("#submit").removeAttr("disabled");  // Разрешаем отправку формы
+        $("#submit").attr("disabled", "disabled");
+    } else{
         $(".pass__label").css("color" , "black");
     }
-    
 });
