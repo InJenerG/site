@@ -8,8 +8,12 @@
     align-items: $ai;
 }
 
-@mixin link($color , $font) {
+ @mixin link($color , $font) {
     text-decoration: none;
     color: $color;
     font-size: $font;
+}
+
+@mixin mg($params){
+    margin: $params
 }

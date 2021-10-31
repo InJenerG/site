@@ -15,7 +15,7 @@ header.header{
         }
     }
     .nav__wrap{
-        width: $size / 2.5;
+        width: $size / 2;
         .nav{
             @include df(row);
             @include cnt(space-around , center);
@@ -26,7 +26,7 @@ header.header{
                     &:visited,
                     &:active,
                     &:hover{
-                        @include link($text-color-secondary , 1.2rem);
+                        @include link($text-color-secondary , 2rem);
                     }
                 }
             }

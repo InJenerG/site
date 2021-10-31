@@ -3,9 +3,10 @@
 
 
 %mg{
-    margin-left: 3%;
+    margin-left: 1%;
     margin-top: 2%;
     margin-bottom: 2%;
+    margin-right: 5%;
 }
 
 %bs {
@@ -23,28 +24,26 @@
         .section__item__text {
             @extend%mg;
             @extend%bs;
-            width: 50%;
+            width: 65%;
             height: auto;
             margin-top: 3%;
+            padding: 1%;
             border-radius: 15px;
             background-color:rgba(249, 170, 51, 0.4);
-            h4 {
+            .item__heading {
                 font-size: 3rem;
             }
-            p {
+            .title {
                 margin-top: 2%;
                 font-size: 1.2rem;
             }
         }
-        // .item {
-        //     width: 25%;
-        // }
         .section__item__image {
-            margin-left: 5%;
             margin-top: 2%;
+            width: 60%;
             .img {
                .picture {
-                   width: 90%;
+                   width: 77%;
                    border-radius: 15px;
                    @extend%mg;
                    @extend%bs;
@@ -62,20 +61,23 @@
             @extend%mg;
             @extend%bs;
             text-align: center;
-            margin-left: 10%;
-            width: 20%;
+            width: 33%;
             border-radius: 50px;
             background-color: rgba(249, 170, 51, 0.4);
-            .sectiom__main__item__img {
-                padding: 5%;
+            .sectiom__icon {
+                padding: 4%;
+                .icon{
+                    width: 30%;
+                    height: 30%;
+                }
             }
-            .sectiom__main__item__text {
+            .sectiom__main__text {
                 color: white;
-                padding: 5%;
-                font-size: 1.1rem;
-                h4 {
-                    font-size: 1.5rem;
-                    margin: 5%;
+                padding: 2%;
+                font-size: 0.8rem;
+                .text__heading {
+                    font-size: 1.2rem;
+                    margin: 3%;
                 }
             }
         }
