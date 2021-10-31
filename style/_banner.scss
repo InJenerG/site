@@ -3,16 +3,27 @@
 
 section.banner{
     @include df(row);
-    @include cnt(space-around , flex-start);
+    @include cnt(space-between , flex-start);
     flex: 1 0 auto;
     background-color: $color-primary;
-    padding-top: $size / 50;
-    .slider{
+    padding: $size / 50;
+    .img__wrap{
         width: $size / 3;
+        .banner__img{
+            width: $size;
+            height: $size;
+        }
     }
-    .heading{
+    .text__wrap{
         width: $size / 2;
-        font-size: 3rem;
-        color: $text-color-primary;
+        .heading{
+            font-size: 3rem;
+            color: $text-color-primary;
+        }
+        .banner__text{
+            margin-top: $size / 50;
+            font-size: 1.5rem;
+            color: $text-color-primary;
+        }
     }
 }

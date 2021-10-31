@@ -9,6 +9,7 @@ body{
         width: $size;
         min-height: $size;
         @include df(column);
+        background-color: $color-primary;
     }
 }
 

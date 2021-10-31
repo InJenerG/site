@@ -3,4 +3,45 @@
 
 main.main{
     flex: 1 0 auto;
+    padding: $size / 50;
+    .main__heading{
+        font-size: 3rem;
+        margin: $size / 100;
+        text-align: center;
+        color: $text-color-primary;
+    }
+    .main__wrap{
+        @include df(row);
+        @include cnt(space-between , flex-start);
+        flex-wrap: wrap;
+        .main__item{
+            width: $size / 3.5;
+            @include df(column);
+            border: 2px solid #fff;
+            border-radius: 20px;
+            margin: $size / 50 0;
+            padding: $size / 100;
+            background-color: $color-secondary;
+            .img__wrap{
+                width: $size;
+                .item__img{
+                    width: $size;
+                    height: $size;
+                }
+            }
+            .text__wrap{
+                width: $size;
+                .item__heading{
+                    color: $text-color-secondary;
+                    font-size: 2rem;
+                }
+                .item__link{
+                    @include link($text-color-secondary , 1.5rem);
+                    &:hover{
+                        color: $text-color-hover;
+                    }
+                }
+            }
+        }
+    }
 }
